@@ -1,0 +1,188 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-size: 14px;
+    font-family: 'Lato', sans-serif;
+    padding: 50px 150px;
+    color: rgb(56, 56, 56);
+    line-height: 1.5;
+
+}
+
+header h1 {
+    text-align: center;
+    color: white;
+    background: rgb(64, 139, 224);
+    padding: 7px;
+    margin-bottom: 10px;
+    letter-spacing: 1px;
+}
+
+header p {
+    text-align: center;
+    color: #313131;
+    line-height: 1.5;
+}
+
+header p span,
+.position p:first-of-type,
+.year,
+.responsibilities p:first-of-type,
+.cert-year ul li {
+    font-weight: 700;
+}
+
+header p a {
+    text-decoration: none;
+    color: rgb(64, 139, 224);
+    border-bottom: 1px solid rgb(64, 139, 224);
+}
+
+header p a:hover {
+    color: #313131;
+    border-bottom: none;
+}
+
+section {
+    margin-top: 20px;
+}
+
+section h3 {
+    border-bottom: 2px solid #a0a0a0;
+    margin-bottom: 5px;
+}
+
+.section-details {
+    margin-bottom: 20px;
+}
+
+.yearposition {
+    display: flex;
+    align-items: top;
+    justify-content: space-between;
+}
+
+.position {
+    flex: 1;
+    margin-left: 30px;
+}
+
+.responsibilities {
+    margin-top: 10px;
+}
+
+.responsibilities ul {
+    position: relative;
+    margin-left: 60px;
+    margin-top: 5px;
+}
+
+.responsibilities ul li {
+    list-style: disc;
+}
+
+.skills .section-details {
+    display: flex;
+    justify-content:space-between;
+}
+
+.left-align {
+    width: 40%;
+    margin-right: 20px;
+}
+
+.right-align {
+    flex: 1;
+}
+
+.cert-year ul li {
+    list-style: none;
+}
+
+section:nth-of-type(6) .left-align {
+    width: 50%;
+}
+
+@media screen and (max-width: 1024px) {
+    body {
+        padding: 50px 100px;    
+    }
+}
+
+@media screen and (max-width: 785px) {
+    body {
+        font-size: .8rem;
+        padding: 50px 70px;
+    }
+
+    header p {
+        line-height: 1.5;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    body {
+        padding: 50px 40px;
+        font-size: 12px;
+    }
+
+    header h1 {
+        font-size: 1rem;
+        padding: 10px;
+        margin-bottom: 10px;
+        letter-spacing: 1px;
+    }
+
+    header p {
+        font-size: .7rem;
+        line-height: 1.5;
+    }
+
+    .responsibilities ul {
+        margin-left: 40px;
+    }
+
+    .skills .section-details {
+        display: inline;
+        justify-content:space-between;
+    }
+
+    .left-align {
+        width: 100%;
+        margin-right: 20px;
+    }
+    
+    .right-align {
+        margin-top: -5px;
+    }
+
+    section:nth-of-type(6) .left-align {
+        width: 80%;
+    }
+
+    section:nth-of-type(6) .right-align{
+        float: right;
+        margin-top: -165px;
+    }
+}
+
+@media screen and (max-width: 375px) {
+    header h1 {
+        font-size: rem;
+        padding: 7px;
+    }
+
+    header p {
+        font-size: .6rem;
+        text-align: left;
+        line-height: 1.5;
+    }
+
+    header p a {
+        display: inline-block;
+    }
+}
