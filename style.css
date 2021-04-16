@@ -126,7 +126,7 @@ section:nth-of-type(6) .left-align {
 
 @media screen and (max-width: 600px) {
     body {
-        padding: 50px 40px;
+        padding: 25px 40px;
         font-size: 12px;
     }
 
